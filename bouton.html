@@ -1,0 +1,72 @@
+<div class="card activity-type-card">   
+    <div class="card-body activite-type-add-type d-flex flex-column justify-content-between">
+      <h3 class="card-title justify-self-center">+</h3>
+      <a role="button" class="btn btn-primary">Selectionner</a>
+    </div>
+
+<style>
+
+    /*//////////////////////////////////////////////   ACTIVITE-TYPE CARD   ///////////////////////////////////////////*/
+
+#activite-form .card-body {
+    padding: 0;
+    height: 16.4rem; 
+    background-size: cover;
+    background-position: center;
+}
+
+#activite-form .card {
+    border: 0.4rem solid var(--hd-white);
+}
+
+#activite-form .card-title {
+    color: var(--hd-white); 
+    text-align: center;
+    transform: translateY(5rem);
+
+}
+
+#activite-form .btn-primary {
+    background-color: var(--hd-inactif);
+    border: var(--hd-inactif);
+    height: 4.2rem;
+    font-size: 1.8rem;
+
+}
+
+
+#activite-form .card-title, #activite-form a[role=button] {
+    z-index: 2;
+}
+
+#activite-form .activite-type-cinema {
+    background-image: url('../Visuels/images/activite-cinema.jpg');
+    
+}
+
+#activite-form .activite-type-sport-aquatique {
+    background-image: url('../Visuels/images/activite-piscine.jpg');
+    
+}
+
+#activite-form .activite-type-restaurant {
+    background-image: url('../Visuels/images/activite-restau.jpg');
+    
+}
+
+#activite-form .card-body::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(39, 45, 126, 4);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+
+
+</style>
